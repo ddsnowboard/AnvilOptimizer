@@ -1,17 +1,32 @@
+import 'enchantments.dart';
+
+
 void main() {
-    print("Hello world");
+    print(_computeCost(null, null));
+}
+
+class LevelTooHighException implements Exception {
+    LevelTooHighException() {
+        
+    }
+    String toString() => "The given level is higher than the max level for this enchantment";
 }
 
 abstract class Enchantable {
-    int priorWork;
-    bool isDamaged;
-    Set<Enchantment> enchantments;
+    final int priorWork;
+    final bool isDamaged;
+    final Set<Enchantment> enchantments;
+    String get fullName;
+    Enchantable(this.priorWork, this.isDamaged, this.enchantments) {
+    }
 }
 
 abstract class Enchantment {
-    int level;
-    int bookMultiplier;
-    int toolMultiplier;
+    int get bookMultiplier;
+    int get toolMultiplier;
+    int get level;
+    int get maxLevel;
+    String get fullName;
     bool compatible(Enchantable tool);
 }
 
@@ -29,9 +44,8 @@ EnchantOutput combine(Enchantable target, Enchantable sacrifice) {
 }
 
 Enchantable _computeOutput(Enchantable target, Enchantable sacrifice) {
-
 }
 
 int _computeCost(Enchantable target, Enchantable sacrifice, [Enchantable output]) {
-    return 5;
+    return Sharpness(5).bookMultiplier;
 }

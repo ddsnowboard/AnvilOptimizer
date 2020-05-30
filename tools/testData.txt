@@ -1,0 +1,319 @@
+<table class="wikitable" style="text-align: center; max-width: 100%;" data-description="Enchantment cost multipliers">
+
+<tbody><tr>
+<th colspan="6">Enchantment cost multipliers
+</th></tr>
+<tr>
+<th>ID<sup id="cite_ref-numeral-ids_1-0" class="reference"><a href="#cite_note-numeral-ids-1">[note 1]</a></sup></th>
+<th>Enchantment</th>
+<th>Max Level</th>
+<th>Applies to</th>
+<th>Multiplier from item</th>
+<th>Multiplier from book
+</th></tr>
+<tr>
+<td>0</td>
+<td><a href="/Protection" title="Protection">Protection</a><sup id="cite_ref-combine-protection_2-0" class="reference"><a href="#cite_note-combine-protection-2">[note 2]</a></sup></td>
+<td>IV</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>1</td>
+<td><a href="/Fire_Protection" title="Fire Protection">Fire Protection</a><sup id="cite_ref-combine-protection_2-1" class="reference"><a href="#cite_note-combine-protection-2">[note 2]</a></sup></td>
+<td>IV</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip" data-minetip-title="Diamond Chestplate"><a href="/Diamond_Chestplate" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip" data-minetip-title="Diamond Boots"><a href="/Diamond_Boots" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>2</td>
+<td><a href="/Feather_Falling" title="Feather Falling">Feather Falling</a></td>
+<td>IV</td>
+<td><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>3</td>
+<td><a href="/Blast_Protection" title="Blast Protection">Blast Protection</a><sup id="cite_ref-combine-protection_2-2" class="reference"><a href="#cite_note-combine-protection-2">[note 2]</a></sup></td>
+<td>IV</td>
+<td><span class="minetip" data-minetip-title="Diamond Helmet"><a href="/Diamond_Helmet" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip" data-minetip-title="Diamond Boots"><a href="/Diamond_Boots" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip" data-minetip-title="Turtle Helmet"><a href="/Turtle_Helmet" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>4</td>
+<td><a href="/Projectile_Protection" title="Projectile Protection">Projectile Protection</a><sup id="cite_ref-combine-protection_2-3" class="reference"><a href="#cite_note-combine-protection-2">[note 2]</a></sup></td>
+<td>IV</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>5</td>
+<td><a href="/Thorns" title="Thorns">Thorns</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip" data-minetip-title="Turtle Helmet"><a href="/Turtle_Helmet" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>6</td>
+<td><a href="/Respiration" title="Respiration">Respiration</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>7</td>
+<td><a href="/Depth_Strider" title="Depth Strider">Depth Strider</a><sup id="cite_ref-combine-walkers_3-0" class="reference"><a href="#cite_note-combine-walkers-3">[note 3]</a></sup></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>8</td>
+<td><a href="/Aqua_Affinity" title="Aqua Affinity">Aqua Affinity</a></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>9</td>
+<td><a href="/Sharpness" title="Sharpness">Sharpness</a><sup id="cite_ref-combine-weapon-damage_4-0" class="reference"><a href="#cite_note-combine-weapon-damage-4">[note 4]</a></sup></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>10</td>
+<td><a href="/Smite" title="Smite">Smite</a><sup id="cite_ref-combine-weapon-damage_4-1" class="reference"><a href="#cite_note-combine-weapon-damage-4">[note 4]</a></sup></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>11</td>
+<td><a href="/Bane_of_Arthropods" title="Bane of Arthropods">Bane of Arthropods</a><sup id="cite_ref-combine-weapon-damage_4-2" class="reference"><a href="#cite_note-combine-weapon-damage-4">[note 4]</a></sup></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>12</td>
+<td><a href="/Knockback" title="Knockback">Knockback</a></td>
+<td>II</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>13</td>
+<td><a href="/Fire_Aspect" title="Fire Aspect">Fire Aspect</a></td>
+<td>II</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>14</td>
+<td><a href="/Looting" title="Looting">Looting</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>15</td>
+<td><a href="/Efficiency" title="Efficiency">Efficiency</a></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span><span class="minetip"><a href="/Shears" title="Shears"><span class="sprite inv-sprite" title="Shears" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -3552px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>16</td>
+<td><a href="/Silk_Touch" title="Silk Touch">Silk Touch</a><sup id="cite_ref-combine-tool-special_5-0" class="reference"><a href="#cite_note-combine-tool-special-5">[note 5]</a></sup></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>17</td>
+<td><a href="/Unbreaking" title="Unbreaking">Unbreaking</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span><span class="minetip"><a href="/Fishing_Rod" title="Fishing Rod"><span class="sprite inv-sprite" title="Fishing Rod" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-448px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span><span class="minetip"><a href="/Diamond_Hoe" class="mw-redirect" title="Diamond Hoe"><span class="sprite inv-sprite" title="Diamond Hoe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -3552px"></span></a></span><span class="minetip"><a href="/Shears" title="Shears"><span class="sprite inv-sprite" title="Shears" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -3552px"></span></a></span><span class="minetip"><a href="/Flint_and_Steel" title="Flint and Steel"><span class="sprite inv-sprite" title="Flint and Steel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-480px -3552px"></span></a></span><span class="minetip"><a href="/Carrot_on_a_Stick" title="Carrot on a Stick"><span class="sprite inv-sprite" title="Carrot on a Stick" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -3520px"></span></a></span><span class="minetip"><a href="/Warped_Fungus_on_a_Stick" title="Warped Fungus on a Stick"><span class="sprite inv-sprite" title="Warped Fungus on a Stick" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -192px"></span></a></span><span class="minetip"><a href="/Shield" title="Shield"><span class="sprite inv-sprite" title="Shield" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -2496px"></span></a></span><span class="minetip"><a href="/Elytra" title="Elytra"><span class="sprite inv-sprite" title="Elytra" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>18</td>
+<td><a href="/Fortune" title="Fortune">Fortune</a><sup id="cite_ref-combine-tool-special_5-1" class="reference"><a href="#cite_note-combine-tool-special-5">[note 5]</a></sup></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>19</td>
+<td><a href="/Power" title="Power">Power</a></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>20</td>
+<td><a href="/Punch" title="Punch">Punch</a></td>
+<td>II</td>
+<td><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>21</td>
+<td><a href="/Flame" title="Flame">Flame</a></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>22</td>
+<td><a href="/Infinity" title="Infinity">Infinity</a><sup id="cite_ref-combine-bow-enchants_6-0" class="reference"><a href="#cite_note-combine-bow-enchants-6">[note 6]</a></sup></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>23</td>
+<td><a href="/Luck_of_the_Sea" title="Luck of the Sea">Luck of the Sea</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Fishing_Rod" title="Fishing Rod"><span class="sprite inv-sprite" title="Fishing Rod" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-448px -3552px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>24</td>
+<td><a href="/Lure" title="Lure">Lure</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Fishing_Rod" title="Fishing Rod"><span class="sprite inv-sprite" title="Fishing Rod" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-448px -3552px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>25</td>
+<td><a href="/Frost_Walker" title="Frost Walker">Frost Walker</a><sup id="cite_ref-combine-walkers_3-1" class="reference"><a href="#cite_note-combine-walkers-3">[note 3]</a></sup></td>
+<td>II</td>
+<td><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>26</td>
+<td><a href="/Mending" title="Mending">Mending</a><sup id="cite_ref-combine-bow-enchants_6-1" class="reference"><a href="#cite_note-combine-bow-enchants-6">[note 6]</a></sup></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span><span class="minetip"><a href="/Fishing_Rod" title="Fishing Rod"><span class="sprite inv-sprite" title="Fishing Rod" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-448px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span><span class="minetip"><a href="/Diamond_Hoe" class="mw-redirect" title="Diamond Hoe"><span class="sprite inv-sprite" title="Diamond Hoe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -3552px"></span></a></span><span class="minetip"><a href="/Shears" title="Shears"><span class="sprite inv-sprite" title="Shears" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -3552px"></span></a></span><span class="minetip" data-minetip-title="Flint and Steel"><a href="/Flint_and_Steel"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-480px -3552px"></span></a></span><span class="minetip"><a href="/Carrot_on_a_Stick" title="Carrot on a Stick"><span class="sprite inv-sprite" title="Carrot on a Stick" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -3520px"></span></a></span><span class="minetip"><a href="/Warped_Fungus_on_a_Stick" title="Warped Fungus on a Stick"><span class="sprite inv-sprite" title="Warped Fungus on a Stick" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -192px"></span></a></span><span class="minetip"><a href="/Shield" title="Shield"><span class="sprite inv-sprite" title="Shield" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -2496px"></span></a></span><span class="minetip"><a href="/Elytra" title="Elytra"><span class="sprite inv-sprite" title="Elytra" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -2496px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>27</td>
+<td><a href="/Curse_of_Binding" title="Curse of Binding">Curse of Binding</a></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Elytra" title="Elytra"><span class="sprite inv-sprite" title="Elytra" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -2496px"></span></a></span><span class="minetip" data-minetip-title="Carved Pumpkin"><a href="/Carved_Pumpkin" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3392px"></span></a></span><span class="minetip"><a href="/Head" title="Head"><span class="sprite inv-sprite" title="Head" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -960px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>28</td>
+<td><a href="/Curse_of_Vanishing" title="Curse of Vanishing">Curse of Vanishing</a></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Diamond_Pickaxe" class="mw-redirect" title="Diamond Pickaxe"><span class="sprite inv-sprite" title="Diamond Pickaxe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-256px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Shovel" class="mw-redirect" title="Diamond Shovel"><span class="sprite inv-sprite" title="Diamond Shovel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-288px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Axe" class="mw-redirect" title="Diamond Axe"><span class="sprite inv-sprite" title="Diamond Axe" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -3552px"></span></a></span><span class="minetip"><a href="/Fishing_Rod" title="Fishing Rod"><span class="sprite inv-sprite" title="Fishing Rod" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-448px -3552px"></span></a></span><span class="minetip"><a href="/Diamond_Helmet" class="mw-redirect" title="Diamond Helmet"><span class="sprite inv-sprite" title="Diamond Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Chestplate" class="mw-redirect" title="Diamond Chestplate"><span class="sprite inv-sprite" title="Diamond Chestplate" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-128px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Leggings" class="mw-redirect" title="Diamond Leggings"><span class="sprite inv-sprite" title="Diamond Leggings" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-192px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Boots" class="mw-redirect" title="Diamond Boots"><span class="sprite inv-sprite" title="Diamond Boots" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span><span class="minetip"><a href="/Diamond_Sword" class="mw-redirect" title="Diamond Sword"><span class="sprite inv-sprite" title="Diamond Sword" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span><span class="minetip"><a href="/Bow" title="Bow"><span class="sprite inv-sprite" title="Bow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -1248px"></span></a></span><span class="minetip" data-minetip-title="Diamond Hoe"><a href="/Diamond_Hoe" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -3552px"></span></a></span><span class="minetip"><a href="/Shears" title="Shears"><span class="sprite inv-sprite" title="Shears" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -3552px"></span></a></span><span class="minetip"><a href="/Flint_and_Steel" title="Flint and Steel"><span class="sprite inv-sprite" title="Flint and Steel" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-480px -3552px"></span></a></span><span class="minetip" data-minetip-title="Carrot on a Stick"><a href="/Carrot_on_a_Stick"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -3520px"></span></a></span><span class="minetip"><a href="/Warped_Fungus_on_a_Stick" title="Warped Fungus on a Stick"><span class="sprite inv-sprite" title="Warped Fungus on a Stick" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-992px -192px"></span></a></span><span class="minetip"><a href="/Shield" title="Shield"><span class="sprite inv-sprite" title="Shield" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-960px -2496px"></span></a></span><span class="minetip" data-minetip-title="Elytra"><a href="/Elytra"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-224px -2496px"></span></a></span><span class="minetip"><a href="/Carved_Pumpkin" class="mw-redirect" title="Carved Pumpkin"><span class="sprite inv-sprite" title="Carved Pumpkin" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3392px"></span></a></span><span class="minetip"><a href="/Head" title="Head"><span class="sprite inv-sprite" title="Head" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-160px -960px"></span></a></span><span class="minetip"><a href="/Turtle_Helmet" class="mw-redirect" title="Turtle Helmet"><span class="sprite inv-sprite" title="Turtle Helmet" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-512px -1664px"></span></a></span><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>29</td>
+<td><a href="/Impaling" title="Impaling">Impaling</a></td>
+<td>V</td>
+<td><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>30</td>
+<td><a href="/Riptide" title="Riptide">Riptide</a><sup id="cite_ref-combine-trident-enchants_7-0" class="reference"><a href="#cite_note-combine-trident-enchants-7">[note 7]</a></sup></td>
+<td>III</td>
+<td><span class="minetip" data-minetip-title="Trident"><a href="/Trident"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>31</td>
+<td><a href="/Loyalty" title="Loyalty">Loyalty</a><sup id="cite_ref-combine-trident-enchants_7-1" class="reference"><a href="#cite_note-combine-trident-enchants-7">[note 7]</a></sup></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>32</td>
+<td><a href="/Channeling" title="Channeling">Channeling</a><sup id="cite_ref-combine-trident-enchants_7-2" class="reference"><a href="#cite_note-combine-trident-enchants-7">[note 7]</a></sup></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Trident" title="Trident"><span class="sprite inv-sprite" title="Trident" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-608px -1696px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>33</td>
+<td><a href="/Multishot" title="Multishot">Multishot</a><sup id="cite_ref-combine-crossbow-enchants_8-0" class="reference"><a href="#cite_note-combine-crossbow-enchants-8">[note 8]</a></sup></td>
+<td>I</td>
+<td><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+<tr>
+<td>34</td>
+<td><a href="/Piercing" title="Piercing">Piercing</a><sup id="cite_ref-combine-crossbow-enchants_8-1" class="reference"><a href="#cite_note-combine-crossbow-enchants-8">[note 8]</a></sup></td>
+<td>IV</td>
+<td><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>1</td>
+<td>1
+</td></tr>
+<tr>
+<td>35</td>
+<td><a href="/Quick_Charge" title="Quick Charge">Quick Charge</a></td>
+<td>III</td>
+<td><span class="minetip"><a href="/Crossbow" title="Crossbow"><span class="sprite inv-sprite" title="Crossbow" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-416px -2368px"></span></a></span></td>
+<td>2</td>
+<td>1
+</td></tr>
+<tr>
+<td>36</td>
+<td><a href="/Soul_Speed" title="Soul Speed">Soul Speed</a></td>
+<td>III</td>
+<td><span class="minetip" data-minetip-title="Diamond Boots"><a href="/Diamond_Boots" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-96px -2496px"></span></a></span></td>
+<td>8</td>
+<td>4
+</td></tr>
+<tr>
+<td>NA<sup id="cite_ref-sweeping-edge_9-0" class="reference"><a href="#cite_note-sweeping-edge-9">[note 9]</a></sup></td>
+<td><a href="/Sweeping_Edge" title="Sweeping Edge">Sweeping Edge</a></td>
+<td>III</td>
+<td><span class="minetip" data-minetip-title="Diamond Sword"><a href="/Diamond_Sword" class="mw-redirect"><span class="sprite inv-sprite" style="background-image:url(/media/4/44/InvSprite.png?version=1589682040635);background-position:-576px -3616px"></span></a></span></td>
+<td>4</td>
+<td>2
+</td></tr>
+
+</tbody></table>

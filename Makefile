@@ -1,8 +1,8 @@
 srcdir = src
 objdir = build
-# sources := $(wildcard $(srcdir)/*.dart)
-sources := $(srcdir)/main.dart
-objects := $(sources:$(srcdir)/%.dart=$(objdir)/%.js)
+generated_sources = $(srcdir)/items.dart $(srcdir)/enchantments.dart 
+sources := $(wildcard $(srcdir)/*.dart) $(generated_sources)
+objects := $(objdir)/main.js
 markup = $(wildcard $(srcdir)/*.html) $(wildcard $(srcdir)/.css)
 markup_objects := $(markup:$(srcdir)/%=$(objdir)/%)
 
@@ -10,11 +10,15 @@ markup_objects := $(markup:$(srcdir)/%=$(objdir)/%)
 
 all : $(objects) $(markup_objects)
 
+$(generated_sources) : 
+	python3 tools/generateEnchantments.py
+
 clean : 
 	$(RM) -r $(objdir)
+	$(RM) $(generated_sources)
 
-$(objects) : $(objdir)/%.js: $(srcdir)/%.dart | $(objdir)
-	dart2js -o $@ $<
+$(objects) : $(sources) | $(objdir)
+	dart2js -o $(objdir)/main.j $(srcdir)/main.dart
 
 $(markup_objects) : $(objdir)/%: $(srcdir)/% | $(objdir)
 	cp $< $@
