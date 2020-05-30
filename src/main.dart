@@ -4,8 +4,8 @@ import "dart:math";
 
 void main() {
   var target = Sword(0, false, <Enchantment>{Smite(3)});
-  var sacrifice = Axe(0, false, <Enchantment>{CurseofVanishing(1)});
-  var output = Sword(1, false, <Enchantment>{Smite(3), CurseofVanishing(1)});
+  var sacrifice = Book(1, false, <Enchantment>{Unbreaking(3)});
+  var output = Sword(1, false, <Enchantment>{Smite(3), Unbreaking(3)});
   print(_computeCost(target, sacrifice, output));
 }
 
@@ -37,6 +37,34 @@ abstract class Enchantment {
   int get maxLevel;
   String get fullName;
   Symbol get typeId;
+  bool hasClashingEnchantment(Enchantable tool) {
+    final List<Set<Symbol>> clashingSets = [
+      <Symbol>{
+        Sharpness(1).typeId,
+        Smite(1).typeId,
+        BaneofArthropods(1).typeId
+      },
+      <Symbol>{Fortune(1).typeId, SilkTouch(1).typeId},
+      <Symbol>{
+        Protection(1).typeId,
+        FireProtection(1).typeId,
+        BlastProtection(1).typeId,
+        ProjectileProtection(1).typeId
+      },
+      <Symbol>{DepthStrider(1).typeId, FrostWalker(1).typeId},
+      <Symbol>{Infinity(1).typeId, Mending(1).typeId},
+      <Symbol>{Multishot(1).typeId, Piercing(1).typeId},
+      <Symbol>{Loyalty(1).typeId, Riptide(1).typeId},
+      <Symbol>{Channeling(1).typeId, Riptide(1).typeId}
+    ];
+    Set<Symbol> intersectingSet = <Symbol>{this.typeId}
+        .union(tool.enchantments.map((e) => e.typeId).toSet());
+    for (final cset in clashingSets) {
+      if (cset.intersection(intersectingSet).length >= 2) return true;
+    }
+    return false;
+  }
+
   bool applicable(Enchantable tool);
   int getMultiplier(Enchantable whence) {
     if (whence is Book)
@@ -86,9 +114,11 @@ int _enchantmentCost(
     Enchantable target, Enchantable sacrifice, Enchantable output) {
   int out = 0;
   for (final enchant in sacrifice.enchantments) {
-    if (!enchant.applicable(target))
+    if (!enchant.applicable(target)) {
       continue;
-    else {
+    } else if(enchant.hasClashingEnchantment(target)) {
+        out += 1;
+    } else {
       Enchantment comboResult = _findEnchantOfType(output, enchant);
       out += comboResult.level * comboResult.getMultiplier(sacrifice);
     }
