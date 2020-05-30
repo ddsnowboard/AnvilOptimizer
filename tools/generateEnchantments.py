@@ -51,7 +51,7 @@ class MaxLevelReader:
 
 class CompatibilityReader:
     def __init__(self):
-        self.compatible = set()
+        self.compatible = {"Book"}
 
     def handle_starttag(self, tag, attrs):
         if "title" in attrs:
@@ -148,7 +148,8 @@ class $class_name extends Enchantment {
     final int toolMultiplier = $tool_multiplier;
     final int maxLevel = $max_level;
     final String fullName = "$name";
-    bool compatible(Enchantable tool) {
+    final Symbol typeId = #$class_name;
+    bool applicable(Enchantable tool) {
         return $compatible_chain;
     }
 
@@ -182,6 +183,7 @@ with request.urlopen(url) as rp:
         for item in all_items:
             f.write("""class {class_name} extends Enchantable {{
     final String fullName = '{name}';
+    final Symbol typeId = #{class_name};
     {class_name}(int priorWork, bool isDamaged, Set<Enchantment> enchantments) : super(priorWork, isDamaged, enchantments) {{
     }}
 }}\n""".format(class_name=item.replace(" ", ""), name=item))

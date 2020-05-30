@@ -1,1 +1,3 @@
 build/*
+src/enchantments.dart
+src/items.dart

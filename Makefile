@@ -10,15 +10,15 @@ markup_objects := $(markup:$(srcdir)/%=$(objdir)/%)
 
 all : $(objects) $(markup_objects)
 
-$(generated_sources) : 
-	python3 tools/generateEnchantments.py
+$(generated_sources) : tools/generateEnchantments.py
+	python3 $<
 
 clean : 
 	$(RM) -r $(objdir)
 	$(RM) $(generated_sources)
 
 $(objects) : $(sources) | $(objdir)
-	dart2js -o $(objdir)/main.j $(srcdir)/main.dart
+	dart2js -o $(objdir)/main.js $(srcdir)/main.dart
 
 $(markup_objects) : $(objdir)/%: $(srcdir)/% | $(objdir)
 	cp $< $@
