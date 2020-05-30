@@ -143,7 +143,6 @@ class Enchantment:
     def class_string(self):
         template = Template("""
 class $class_name extends Enchantment {
-    final int level;
     final int bookMultiplier = $book_multiplier;
     final int toolMultiplier = $tool_multiplier;
     final int maxLevel = $max_level;
@@ -153,10 +152,11 @@ class $class_name extends Enchantment {
         return $compatible_chain;
     }
 
-    $class_name(this.level) {
-        if(this.level > this.maxLevel) {
-            throw LevelTooHighException();
-        }
+    $class_name(int level): super(level) {
+    }
+
+    $class_name clone() {
+        return $class_name(this.level);
     }
 }""")
         d = {"name": self.name, "class_name": self.class_name, "book_multiplier": self.book_multiplier, "tool_multiplier": self.item_multiplier,
@@ -181,10 +181,14 @@ with request.urlopen(url) as rp:
     with open("src/items.dart", 'w') as f:
         f.write("import 'main.dart';\n")
         for item in all_items:
-            f.write("""class {class_name} extends Enchantable {{
+            f.write("""class {class_name} extends ConcreteEnchantable {{
     final String fullName = '{name}';
     final Symbol typeId = #{class_name};
     {class_name}(int priorWork, bool isDamaged, Set<Enchantment> enchantments) : super(priorWork, isDamaged, enchantments) {{
+    }}
+
+    {class_name} clone() {{
+        return {class_name}(this.priorWork, this.isDamaged, this.cloneEnchantments());
     }}
 }}\n""".format(class_name=item.replace(" ", ""), name=item))
 
