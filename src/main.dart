@@ -126,10 +126,16 @@ class EnchantOutput {
   final int cost;
 
   EnchantOutput(this.output, this.cost) {}
+  String toString() {
+    return "${output.toString()} costing $cost";
+  }
 }
 
 EnchantOutput combine(
     ConcreteEnchantable target, ConcreteEnchantable sacrifice) {
+  if (target == null || sacrifice == null) {
+    throw Exception("You shouldn't pass nulls into combine()");
+  }
   var output = _computeOutput(target, sacrifice);
   if (output == null) return null;
   var cost = _computeCost(target, sacrifice, output);
@@ -208,7 +214,7 @@ class EnchantOrdering {
   EnchantPairing lastPairing;
   EnchantOrdering(this.lastPairing);
   String toString() {
-    return "Cost: {this.getCost()} : ${this.lastPairing.toString()}";
+    return "Cost: ${getCost()} : ${this.lastPairing.toString()}";
   }
 
   bool isPossible() {
@@ -222,7 +228,7 @@ class EnchantOrdering {
       var e = q.removeFirst();
       var cost = e.getCost();
       if (cost == null) return null;
-      out += e.getCost();
+      out += cost;
       if (e is EnchantPairing) {
         q.addLast(e.target);
         q.addLast(e.sacrifice);
@@ -236,10 +242,11 @@ class EnchantPairing extends Enchantable {
   Enchantable target;
   Enchantable sacrifice;
   EnchantOutput get _output {
-    // print(this.target.makeConcrete());
-    // print(this.sacrifice.makeConcrete());
-    this.__output ??=
-        combine(this.target.makeConcrete(), this.sacrifice.makeConcrete());
+    var concreteTarget = target.makeConcrete();
+    var concreteSacrifice = sacrifice.makeConcrete();
+    if (concreteTarget != null && concreteSacrifice != null) {
+      this.__output ??= combine(concreteTarget, concreteSacrifice);
+    }
     return this.__output;
   }
 
@@ -279,10 +286,7 @@ Set<EnchantOrdering> allOrderings(Set<Enchantable> enchantables) {
       out = out.union(allOrderings(newList.toSet()));
     }
   }
-  var f = out.where((e) {
-    print(e);
-    return e.isPossible();
-  }).toSet();
+  var f = out.where((e) => e.isPossible()).toSet();
   print("HERE");
   return f;
 }
