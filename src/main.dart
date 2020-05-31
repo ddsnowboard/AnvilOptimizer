@@ -46,12 +46,12 @@ abstract class ConcreteEnchantable extends Enchantable {
   }
 
   Set<Enchantment> cloneEnchantments() {
-    return this.enchantments.map((e) => e.clone()).toSet();
+    return enchantments.map((e) => e.clone()).toSet();
   }
 
   String toString() {
     var enchants = this.enchantments.map((e) => e.toString()).join(", ");
-    return "${this.fullName} (${this.priorWork}): $enchants";
+    return "$fullName ($priorWork): $enchants";
   }
 
   Enchantment getCompatibleEnchantment(Enchantment enchant) {
@@ -62,7 +62,7 @@ abstract class ConcreteEnchantable extends Enchantable {
   }
 
   bool hasCompatibleEnchantment(Enchantment enchant) {
-    return this.getCompatibleEnchantment(enchant) != null;
+    return getCompatibleEnchantment(enchant) != null;
   }
 }
 
@@ -76,14 +76,15 @@ abstract class Enchantment {
   int get hashCode => this.fullName.hashCode;
   Enchantment clone();
   String toString() {
-    return "${this.fullName} ${this.level}";
+    return "$fullName $level";
   }
 
   Enchantment(this.level) {
-    if (this.level > this.maxLevel) {
+    if (level > maxLevel) {
       throw LevelTooHighException();
     }
   }
+
   bool hasClashingEnchantment(ConcreteEnchantable tool) {
     final List<Set<Symbol>> clashingSets = [
       <Symbol>{
@@ -104,15 +105,16 @@ abstract class Enchantment {
       <Symbol>{Loyalty(1).typeId, Riptide(1).typeId},
       <Symbol>{Channeling(1).typeId, Riptide(1).typeId}
     ];
+
     Set<Symbol> intersectingSet = <Symbol>{this.typeId}
         .union(tool.enchantments.map((e) => e.typeId).toSet());
-    for (final cset in clashingSets) {
-      if (cset.intersection(intersectingSet).length >= 2) return true;
-    }
-    return false;
+
+    return clashingSets
+        .any((cset) => cset.intersection(intersectingSet).length >= 2);
   }
 
   bool applicable(ConcreteEnchantable tool);
+
   int getMultiplier(ConcreteEnchantable whence) {
     if (whence is Book)
       return this.bookMultiplier;
@@ -145,6 +147,7 @@ EnchantOutput combine(
 ConcreteEnchantable _computeOutput(
     ConcreteEnchantable target, ConcreteEnchantable sacrifice) {
   if (!(target.typeId == sacrifice.typeId || sacrifice is Book)) return null;
+
   var out = target.clone();
   out.priorWork++;
   for (final enchant in sacrifice.enchantments) {
@@ -214,7 +217,7 @@ class EnchantOrdering {
   EnchantPairing lastPairing;
   EnchantOrdering(this.lastPairing);
   String toString() {
-    return "Cost: ${getCost()} : ${this.lastPairing.toString()}";
+    return "Cost: ${getCost()} : $lastPairing";
   }
 
   bool isPossible() {
@@ -287,7 +290,6 @@ Set<EnchantOrdering> allOrderings(Set<Enchantable> enchantables) {
     }
   }
   var f = out.where((e) => e.isPossible()).toSet();
-  print("HERE");
   return f;
 }
 
