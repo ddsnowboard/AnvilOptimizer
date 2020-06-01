@@ -4,19 +4,27 @@ import "dart:math";
 import "dart:collection";
 
 void main() {
-  var target = Sword(1, false, <Enchantment>{Smite(2)});
-  var sacrifice = Sword(1, false, <Enchantment>{Unbreaking(3)});
-  var output = Sword(2, false, <Enchantment>{Smite(3), Unbreaking(3)});
   var orderings = allOrderings({
-    Book(0, false, {FireAspect(2)}),
-    Book(0, false, {Knockback(2)}),
-    target,
-    sacrifice
+    Sword(0, false, {FireAspect(1)}),
+    Sword(0, false, {Sharpness(4), Knockback(2), Looting(3), Unbreaking(3)}),
+    Book(0, false, {Sharpness(3)}),
+    Book(0, false, {Sharpness(3)}),
+    Book(0, false, {FireAspect(1)}),
+    Book(0, false, {SweepingEdge(3)}),
+    Book(0, false, {Mending(1)}),
   });
+  var p = EnchantOrdering(EnchantPairing(Book(0, false, {Mending(1)}), Book(1, false, {Looting(3)})));
+  var q = EnchantOrdering(EnchantPairing(Book(0, false, {Mending(1)}), EnchantPairing(Book(0, false, {Looting(2)}), Book(0, false, {Looting(2)}))));
   print(orderings.length);
-  for (final o in orderings) {
-    print(o);
-  }
+  var cheapest = orderings.reduce((o1, o2) {
+      var c1 = o1.getCost();
+      var c2 = o2.getCost();
+      if(c1 < c2)
+          return o1;
+      else
+          return o2;
+  });
+  print(cheapest);
 }
 
 class LevelTooHighException implements Exception {
@@ -141,6 +149,8 @@ EnchantOutput combine(
   var output = _computeOutput(target, sacrifice);
   if (output == null) return null;
   var cost = _computeCost(target, sacrifice, output);
+  if(cost >= 40)
+      return null;
   return EnchantOutput(output, cost);
 }
 
@@ -149,7 +159,7 @@ ConcreteEnchantable _computeOutput(
   if (!(target.typeId == sacrifice.typeId || sacrifice is Book)) return null;
 
   var out = target.clone();
-  out.priorWork++;
+  out.priorWork = max(target.priorWork, sacrifice.priorWork) + 1;
   for (final enchant in sacrifice.enchantments) {
     if (out.hasCompatibleEnchantment(enchant)) {
       var compat = out.getCompatibleEnchantment(enchant);
@@ -221,7 +231,8 @@ class EnchantOrdering {
   }
 
   bool isPossible() {
-    return this.getCost() != null;
+    var cost = getCost();
+    return cost != null;
   }
 
   int getCost() {

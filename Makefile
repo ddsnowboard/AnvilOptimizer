@@ -20,6 +20,9 @@ clean :
 $(objects) : $(sources) | $(objdir)
 	dart2js -o $(objdir)/main.js $(srcdir)/main.dart
 
+native : $(sources) | $(objdir)
+	dart2native -o $(objdir)/main $(srcdir)/main.dart
+
 $(markup_objects) : $(objdir)/%: $(srcdir)/% | $(objdir)
 	cp $< $@
 
