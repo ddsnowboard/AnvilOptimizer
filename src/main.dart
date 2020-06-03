@@ -5,13 +5,10 @@ import "dart:collection";
 
 void main() {
   var orderings = allOrderings({
-    Sword(0, false, {FireAspect(1)}),
-    Sword(0, false, {Sharpness(4), Knockback(2), Looting(3), Unbreaking(3)}),
-    Book(0, false, {Sharpness(3)}),
-    Book(0, false, {Sharpness(3)}),
-    Book(0, false, {FireAspect(1)}),
-    Book(0, false, {SweepingEdge(3)}),
-    Book(0, false, {Mending(1)}),
+    Bow(3, false, {Power(4), Punch(1), Unbreaking(2), Mending(1), Flame(1)}),
+    Book(0, false, {Punch(1)}),
+    Book(0, false, {Power(3)}),
+    Book(0, false, {Power(3)}),
   });
   var p = EnchantOrdering(EnchantPairing(Book(0, false, {Mending(1)}), Book(1, false, {Looting(3)})));
   var q = EnchantOrdering(EnchantPairing(Book(0, false, {Mending(1)}), EnchantPairing(Book(0, false, {Looting(2)}), Book(0, false, {Looting(2)}))));
@@ -183,7 +180,7 @@ int _computeCost(ConcreteEnchantable target, ConcreteEnchantable sacrifice,
   }
   return _priorWorkPenalty(target) +
       _priorWorkPenalty(sacrifice) +
-      _repairCost(target) +
+      _repairCost(target, sacrifice) +
       _enchantmentCost(target, sacrifice, output);
 }
 
@@ -191,8 +188,8 @@ int _priorWorkPenalty(ConcreteEnchantable item) {
   return pow(2, item.priorWork) - 1;
 }
 
-int _repairCost(ConcreteEnchantable item) {
-  if (item.isDamaged)
+int _repairCost(ConcreteEnchantable target, ConcreteEnchantable sacrifice) {
+  if (target.isDamaged && target.typeId == sacrifice.typeId)
     return 2;
   else
     return 0;
