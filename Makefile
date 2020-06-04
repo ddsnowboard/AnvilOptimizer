@@ -1,10 +1,11 @@
 srcdir = src
-objdir = build
+builddir = build
+bindir = bin
 generated_sources = $(srcdir)/items.dart $(srcdir)/enchantments.dart 
 sources := $(wildcard $(srcdir)/*.dart) $(generated_sources)
-objects := $(objdir)/main.js
+objects := $(builddir)/main.js
 markup = $(wildcard $(srcdir)/*.html) $(wildcard $(srcdir)/.css)
-markup_objects := $(markup:$(srcdir)/%=$(objdir)/%)
+markup_objects := $(markup:$(srcdir)/%=$(builddir)/%)
 
 .PHONY: clean
 
@@ -14,21 +15,18 @@ $(generated_sources) : tools/generateEnchantments.py
 	python3 $<
 
 clean : 
-	$(RM) -r $(objdir)
+	$(RM) -r $(builddir)
+	$(RM) -r $(bindir)
 	$(RM) $(generated_sources)
 
-$(objects) : $(sources) | $(objdir)
-	dart2js -o $(objdir)/main.js $(srcdir)/main.dart
+$(objects) : $(sources) | $(builddir)
+	dart2js -o $(builddir)/main.js $(srcdir)/main.dart
 
-native : $(sources) | $(objdir)
-	dart2native -o $(objdir)/main $(srcdir)/main.dart
+native : $(sources) | $(bindir)
+	dart2native -o $(bindir)/main $(srcdir)/calc.dart
 
-$(markup_objects) : $(objdir)/%: $(srcdir)/% | $(objdir)
-	cp $< $@
+$(markup_objects) : $(builddir)/%: $(srcdir)/% | $(builddir)
+	ln -s `realpath $<` $@
 
-$(objdir) : 
+$(builddir) $(bindir) : 
 	mkdir -p $@
-
-print : 
-	@echo $(markup_objects)
-	@echo $(objects)
