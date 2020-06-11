@@ -170,7 +170,7 @@ with request.urlopen(url) as rp:
     parser.feed(html)
     parser.close()
     enchantments = [Enchantment(row) for row in parser.finished_rows]
-    with open("src/enchantments.dart", "w") as f:
+    with open("lib/enchantments.dart", "w") as f:
         f.write("import 'calc.dart';\n");
         f.write("import 'items.dart';\n");
         for e in enchantments:
@@ -178,7 +178,7 @@ with request.urlopen(url) as rp:
         f.write(f"\nList<Type> enchantments = [{','.join(e.class_name for e in enchantments)}];\n");
 
     all_items = reduce(operator.or_, (e.compatible_items for e in enchantments))
-    with open("src/items.dart", 'w') as f:
+    with open("lib/items.dart", 'w') as f:
         f.write("import 'calc.dart';\n")
         for item in all_items:
             f.write("""class {class_name} extends ConcreteEnchantable {{
