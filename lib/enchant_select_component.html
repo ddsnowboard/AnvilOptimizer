@@ -1,0 +1,4 @@
+<div>
+    <input type="button" (click)="addEnchantment()" value="+" />
+    <enchant-component *ngFor="let enchant of enchantments" [enchant]="enchant"></enchant-component>
+</div>

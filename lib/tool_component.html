@@ -1,0 +1,11 @@
+<div>
+    <label for="type">Item:</label>
+    <select name="type" [(ngModel)]="toolName">
+        <option *ngFor="let name of getTypeNames()" value="{{name}}">
+            {{ name }}
+        </option>
+    </select>
+    <label for="priorWork">Prior work (<a target="_blank" href="https://minecraft.gamepedia.com/Anvil/Mechanics#Prior_work_penalty">?</a>)</label>
+    <input type="number" name="priorWork" min="0" [(ngModel)]="priorWork" />
+    <enchant-selector [item]="getTool()" [(enchantments)]="enchantments"></enchant-selector>
+</div>

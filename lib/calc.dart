@@ -88,6 +88,13 @@ abstract class Enchantment {
     return "$fullName $level";
   }
 
+  bool operator ==(Object other) {
+    if (other is Enchantment) {
+      return typeId == other.typeId && level == other.level;
+    }
+    return false;
+  }
+
   Enchantment(this.level) {
     if (level > maxLevel) {
       throw LevelTooHighException();

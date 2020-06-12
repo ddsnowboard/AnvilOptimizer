@@ -148,7 +148,7 @@ class $class_name extends Enchantment {
     final int maxLevel = $max_level;
     final String fullName = "$name";
     final Symbol typeId = #$class_name;
-    bool applicable(Enchantable tool) {
+    bool applicable(ConcreteEnchantable tool) {
         return $compatible_chain;
     }
 
@@ -163,6 +163,36 @@ class $class_name extends Enchantment {
              "max_level": self.max_level, "compatible_chain": " || ".join(f"tool is {other.replace(' ', '')}" for other in self.compatible_items)}
         return template.substitute(**d)
 
+def item_factory_function(full_names):
+    case_template = Template("""
+    case "$name": {
+        return $class_name(priorWork, isDamaged, enchantments);
+    }""")
+    factory_template = Template("""
+ConcreteEnchantable constructTool(String name, int priorWork, bool isDamaged, Set<Enchantment> enchantments) {
+    switch(name) {
+        $cases
+    }
+    return null;
+}""")
+    cases = [case_template.substitute(name=name, class_name=name.replace(" ", "")) for name in full_names]
+    return factory_template.substitute(cases="\n".join(cases))
+
+def enchantment_factory_function(enchantments):
+    case_template = Template("""
+    case "$name": {
+        return $class_name(level);
+    }""")
+    factory_template = Template("""
+Enchantment constructEnchantment(String name, int level) {
+    switch(name) {
+        $cases
+    }
+    return null;
+}""")
+    cases = [case_template.substitute(name=e.name, class_name=e.class_name) for e in enchantments]
+    return factory_template.substitute(cases="\n".join(cases))
+
 
 with request.urlopen(url) as rp:
     html = rp.read().decode("UTF-8")
@@ -175,7 +205,8 @@ with request.urlopen(url) as rp:
         f.write("import 'items.dart';\n");
         for e in enchantments:
             f.write(e.class_string())
-        f.write(f"\nList<Type> enchantments = [{','.join(e.class_name for e in enchantments)}];\n");
+        f.write(f"\nList<String> allEnchantments = [{','.join(repr(e.name) for e in enchantments)}];\n");
+        f.write(enchantment_factory_function(enchantments))
 
     all_items = reduce(operator.or_, (e.compatible_items for e in enchantments))
     with open("lib/items.dart", 'w') as f:
@@ -191,4 +222,6 @@ with request.urlopen(url) as rp:
         return {class_name}(this.priorWork, this.isDamaged, this.cloneEnchantments());
     }}
 }}\n""".format(class_name=item.replace(" ", ""), name=item))
+        f.write("List<String> allItems = [{}];".format(", ".join('"' + i + '"' for i in all_items)))
+        f.write(item_factory_function(all_items))
 
