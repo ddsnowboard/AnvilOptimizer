@@ -148,9 +148,12 @@ class $class_name extends Enchantment {
     final int maxLevel = $max_level;
     final String fullName = "$name";
     final Symbol typeId = #$class_name;
+    static const Set<String> compatibleItemSet = const {$compatible_list};
     bool applicable(ConcreteEnchantable tool) {
-        return $compatible_chain;
+        return $class_name.compatibleItemSet.contains(tool.fullName);
     }
+
+    Set<String> get compatibleItems => $class_name.compatibleItemSet;
 
     $class_name(int level): super(level) {
     }
@@ -160,7 +163,7 @@ class $class_name extends Enchantment {
     }
 }""")
         d = {"name": self.name, "class_name": self.class_name, "book_multiplier": self.book_multiplier, "tool_multiplier": self.item_multiplier,
-             "max_level": self.max_level, "compatible_chain": " || ".join(f"tool is {other.replace(' ', '')}" for other in self.compatible_items)}
+             "max_level": self.max_level, "compatible_list": ", ".join('"' + other + '"' for other in self.compatible_items)}
         return template.substitute(**d)
 
 def item_factory_function(full_names):

@@ -1,3 +1,5 @@
 <div>
-    Enchantment is {{enchant.fullName}} {{enchant.level}}.
+    <select [ngModel]="enchant" [compareWith]="sameType" (change)="setEnchant($event.target.value)">
+        <option *ngFor="let e of possibilities" [ngValue]="e">{{e.fullName}}</option>
+    </select>
 </div>

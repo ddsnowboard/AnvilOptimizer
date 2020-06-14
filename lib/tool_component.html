@@ -7,5 +7,6 @@
     </select>
     <label for="priorWork">Prior work (<a target="_blank" href="https://minecraft.gamepedia.com/Anvil/Mechanics#Prior_work_penalty">?</a>)</label>
     <input type="number" name="priorWork" min="0" [(ngModel)]="priorWork" />
-    <enchant-selector [item]="getTool()" [(enchantments)]="enchantments"></enchant-selector>
+    <input type="button" (click)="addEnchantment" value="+"/>
+    <enchant-component *ngFor="let enchant of enchantments; let idx=index" [enchant]="enchant" (onChange)="setEnchant(idx, $event)" [possibilities]="possibleEnchantments"></enchant-component>
 </div>

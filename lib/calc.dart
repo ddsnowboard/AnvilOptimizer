@@ -83,6 +83,7 @@ abstract class Enchantment {
   String get fullName;
   Symbol get typeId;
   int get hashCode => this.fullName.hashCode;
+  Set<String> get compatibleItems;
   Enchantment clone();
   String toString() {
     return "$fullName $level";
