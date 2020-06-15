@@ -2,6 +2,7 @@ import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'enchantments.dart';
 import 'calc.dart';
+import 'DynamicEnchantment.dart';
 import 'dart:async';
 
 @Component(
@@ -11,20 +12,18 @@ import 'dart:async';
     styleUrls: ['enchant_component.css'])
 class EnchantComponent {
   @Input()
-  Enchantment enchant;
+  DynamicEnchantment enchant;
   @Input()
   List<Enchantment> possibilities;
   @Output()
-  Stream<Enchantment> get onChange => _onChange.stream;
-  StreamController<Enchantment> _onChange = StreamController<Enchantment>();
+  Stream<void> get onClose => _onClose.stream;
+  StreamController<void> _onClose = StreamController<void>();
   EnchantComponent() {}
-
-  void setEnchant(String newEnchant) {
-    _onChange.add(constructEnchantment(newEnchant, 1));
-    print(newEnchant);
+  int currentMaxLevel() {
+      return enchant.toEnchantment().maxLevel;
   }
-
-  bool sameType(Enchantment e1, Enchantment e2) {
-      return e1.typeId == e2.typeId;
+   
+  void close() {
+      _onClose.add(null);
   }
 }
