@@ -205,7 +205,6 @@ with request.urlopen(url) as rp:
     enchantments = [Enchantment(row) for row in parser.finished_rows]
     with open("lib/enchantments.dart", "w") as f:
         f.write("import 'calc.dart';\n");
-        f.write("import 'items.dart';\n");
         for e in enchantments:
             f.write(e.class_string())
         f.write(f"\nList<String> allEnchantments = [{','.join(repr(e.name) for e in enchantments)}];\n");

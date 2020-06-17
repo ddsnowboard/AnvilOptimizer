@@ -1,1 +1,4 @@
-<tool-component></tool-component>
+<tool-component *ngFor="let tool of tools" [tool]="tool"></tool-component>
+<input type="button" value="Add tool" (click)="addTool()" />
+
+<input type="button" value="Calculate" (click)="calculateMinimum()" />

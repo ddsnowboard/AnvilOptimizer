@@ -28,6 +28,19 @@ void main() {
   print(cheapest);
 }
 
+EnchantOrdering cheapestOrdering(Set<ConcreteEnchantable> items) {
+  var orderings = allOrderings(items);
+  var cheapest = orderings.reduce((o1, o2) {
+    var c1 = o1.getCost();
+    var c2 = o2.getCost();
+    if (c1 < c2)
+      return o1;
+    else
+      return o2;
+  });
+  return cheapest;
+}
+
 class LevelTooHighException implements Exception {
   LevelTooHighException() {}
   String toString() =>

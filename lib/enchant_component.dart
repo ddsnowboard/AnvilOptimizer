@@ -1,6 +1,5 @@
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
-import 'enchantments.dart';
 import 'calc.dart';
 import 'DynamicEnchantment.dart';
 import 'dart:async';
@@ -20,10 +19,10 @@ class EnchantComponent {
   StreamController<void> _onClose = StreamController<void>();
   EnchantComponent() {}
   int currentMaxLevel() {
-      return enchant.toEnchantment().maxLevel;
+    return enchant.toEnchantment().maxLevel;
   }
-   
+
   void close() {
-      _onClose.add(null);
+    _onClose.add(null);
   }
 }
