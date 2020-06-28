@@ -5,10 +5,11 @@ import "dart:collection";
 
 void main() {
   var orderings = allOrderings({
-    Bow(3, false, {Power(4), Punch(1), Unbreaking(2), Mending(1), Flame(1)}),
-    Book(0, false, {Punch(1)}),
-    Book(0, false, {Power(3)}),
-    Book(0, false, {Power(3)}),
+    Bow(0, true, {Power(4), Punch(2), Unbreaking(3)}),
+    Book(0, false, {Infinity(1)}),
+    Book(0, false, {Flame(1)}),
+    Bow(0, false, {Power(3)}),
+    Bow(0, false, {Power(3)}),
   });
   var p = EnchantOrdering(EnchantPairing(
       Book(0, false, {Mending(1)}), Book(1, false, {Looting(3)})));
@@ -29,6 +30,9 @@ void main() {
 }
 
 EnchantOrdering cheapestOrdering(Set<ConcreteEnchantable> items) {
+  if (items.length < 2) {
+    return null;
+  }
   var orderings = allOrderings(items);
   var cheapest = orderings.reduce((o1, o2) {
     var c1 = o1.getCost();

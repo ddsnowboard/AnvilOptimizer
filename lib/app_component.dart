@@ -1,14 +1,22 @@
 import 'package:angular/angular.dart';
 import "tool_component.dart";
 import 'calc.dart';
+import 'enchantments.dart';
+import 'items.dart';
 import 'DynamicEnchantable.dart';
+import 'enchant_tree.dart';
 
 @Component(
     selector: 'app-component',
     templateUrl: 'app_component.html',
-    directives: [coreDirectives, ToolComponent])
+    directives: [coreDirectives, ToolComponent, EnchantTree])
 class AppComponent {
   List<DynamicEnchantable> tools = [];
+  // EnchantOrdering output = null;
+  EnchantOrdering output = EnchantOrdering(EnchantPairing(
+      EnchantPairing(Pickaxe(0, false, {Mending(1), Efficiency(5)}),
+          Book(0, false, {Unbreaking(2)})),
+      Book(0, false, {Unbreaking(2)})));
   void addTool() {
     tools.add(DynamicEnchantable("Pickaxe", [], 0, false));
   }
@@ -20,6 +28,6 @@ class AppComponent {
     Set<ConcreteEnchantable> concreteTools =
         tools.map((t) => t.toEnchantable()).toSet();
     EnchantOrdering bestOrdering = cheapestOrdering(concreteTools);
-    print(bestOrdering);
+    output = bestOrdering;
   }
 }
