@@ -1,0 +1,13 @@
+<div class="gridContainer">
+    <div class="node">
+        <item-view [item]="output.makeConcrete()"></item-view>
+    </div>
+    <div class="leftSubtree">
+        <enchant-subtree *ngIf="hasLeftSubtree()" [output]="leftSubtree()"></enchant-subtree>
+        <item-view *ngIf="!hasLeftSubtree()" [item]="output.target.makeConcrete()"></item-view>
+    </div>
+    <div class="rightSubtree">
+        <enchant-subtree *ngIf="hasRightSubtree()" [output]="rightSubtree()"></enchant-subtree>
+        <item-view *ngIf="!hasRightSubtree()" [item]="output.sacrifice.makeConcrete()"></item-view>
+    </div>
+</div>

@@ -33,7 +33,7 @@ EnchantOrdering cheapestOrdering(Set<ConcreteEnchantable> items) {
   if (items.length < 2) {
     return null;
   }
-  var orderings = allOrderings(items);
+  var orderings = allOrderings(items).where((o) => o.isPossible());
   var cheapest = orderings.reduce((o1, o2) {
     var c1 = o1.getCost();
     var c2 = o2.getCost();

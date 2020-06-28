@@ -1,0 +1,27 @@
+div {
+    text-align: center;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.node {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.leftSubtree {
+    border: 2px solid orange;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.rightSubtree {
+    border: 2px solid blue;
+    grid-column: 2;
+    grid-row: 2;
+}

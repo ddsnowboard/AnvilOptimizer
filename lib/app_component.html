@@ -3,4 +3,4 @@
 
 <input type="button" value="Calculate" (click)="calculateMinimum()" />
 
-<enchant-tree *ngIf="output != null" [output]="output"></enchant-tree>
+<enchant-subtree *ngIf="output != null" [output]="output.lastPairing"></enchant-subtree>
