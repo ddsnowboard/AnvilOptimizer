@@ -3,4 +3,7 @@
 
 <input type="button" value="Calculate" (click)="calculateMinimum()" />
 
-<enchant-subtree *ngIf="output != null" [output]="output.lastPairing"></enchant-subtree>
+<div class="totalCost" *ngIf="output != null">Total Cost: {{ output.getCost() }}</div>
+<div class="simpleBorder">
+    <enchant-subtree *ngIf="output != null" [output]="output.lastPairing"></enchant-subtree>
+</div>

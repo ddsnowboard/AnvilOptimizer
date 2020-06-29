@@ -9,15 +9,15 @@ import 'enchant_subtree.dart';
 @Component(
     selector: 'app-component',
     templateUrl: 'app_component.html',
-    directives: [coreDirectives, ToolComponent, EnchantSubtree])
+    directives: [coreDirectives, ToolComponent, EnchantSubtree], 
+    styleUrls: ['app_component.css'])
 class AppComponent {
   List<DynamicEnchantable> tools = [];
-  EnchantOrdering output = null;
-  /*EnchantOrdering output = EnchantOrdering(EnchantPairing(
+  // EnchantOrdering output = null;
+  EnchantOrdering output = EnchantOrdering(EnchantPairing(
       EnchantPairing(Pickaxe(0, false, {Mending(1), Efficiency(5)}),
           Book(0, false, {Unbreaking(2)})),
       Book(0, false, {Unbreaking(2)})));
-      */
 
   void addTool() {
     tools.add(DynamicEnchantable("Pickaxe", [], 0, false));

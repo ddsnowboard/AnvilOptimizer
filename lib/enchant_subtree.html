@@ -1,6 +1,9 @@
 <div class="gridContainer">
     <div class="node">
+        <h3>Cost: {{ toplineCost() }}</h3>
+        <div></div>
         <item-view [item]="output.makeConcrete()"></item-view>
+        <div></div>
     </div>
     <div class="leftSubtree">
         <enchant-subtree *ngIf="hasLeftSubtree()" [output]="leftSubtree()"></enchant-subtree>

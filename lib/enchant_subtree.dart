@@ -26,4 +26,8 @@ class EnchantSubtree {
   EnchantPairing rightSubtree() {
     return output.sacrifice as EnchantPairing;
   }
+
+  int toplineCost() {
+      return combine(output.target.makeConcrete(), output.sacrifice.makeConcrete()).cost;
+  }
 }
