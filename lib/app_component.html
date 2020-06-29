@@ -1,9 +1,9 @@
-<tool-component *ngFor="let tool of tools" [tool]="tool"></tool-component>
+<tool-component *ngFor="let tool of tools; let idx=index" (onClose)="removeTool(idx)" [tool]="tool"></tool-component>
 <input type="button" value="Add tool" (click)="addTool()" />
 
 <input type="button" value="Calculate" (click)="calculateMinimum()" />
 
 <div class="totalCost" *ngIf="output != null">Total Cost: {{ output.getCost() }}</div>
-<div class="simpleBorder">
-    <enchant-subtree *ngIf="output != null" [output]="output.lastPairing"></enchant-subtree>
+<div *ngIf="output != null" class="simpleBorder">
+    <enchant-subtree [output]="output.lastPairing"></enchant-subtree>
 </div>

@@ -3,5 +3,7 @@
         <option *ngFor="let e of possibilities" [value]="e.fullName">{{e.fullName}}</option>
     </select>
     <input type="number" min="1" [max]="currentMaxLevel()" [(ngModel)]="enchant.level"/>
-    <img src="https://3vfjs6e58tj3yfef2wptam15-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/red-x-on-network-icon-600x526.png" (click)="close()" width="20" height="20" />
+    <div class="deleteButton" (click)="close()">
+        <img src="https://3vfjs6e58tj3yfef2wptam15-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/red-x-on-network-icon-600x526.png" height="25" width="25"/>
+    </div>
 </div>

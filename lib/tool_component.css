@@ -1,3 +1,5 @@
-div {
-    border-color: red;
+.deleteButton {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
 }

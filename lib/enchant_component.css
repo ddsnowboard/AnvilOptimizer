@@ -1,0 +1,9 @@
+.deleteButton {
+    background-image: url();
+    display: inline-block;
+}
+
+.deleteButton > * {
+    display: inline-block;
+    vertical-align: middle;
+}

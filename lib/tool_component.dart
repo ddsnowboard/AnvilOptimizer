@@ -6,6 +6,7 @@ import 'enchantments.dart';
 import 'enchant_component.dart';
 import 'DynamicEnchantment.dart';
 import 'DynamicEnchantable.dart';
+import 'dart:async';
 
 @Component(
     selector: 'tool-component',
@@ -15,6 +16,11 @@ import 'DynamicEnchantable.dart';
 class ToolComponent {
   static final List<Enchantment> allEnchantmentsConstructed =
       allEnchantments.map((e) => constructEnchantment(e, 1)).toList();
+
+  @Output()
+  Stream<void> get onClose => _onClose.stream;
+  StreamController<void> _onClose = StreamController<void>();
+
   List<Enchantment> get possibleEnchantments => allEnchantmentsConstructed
       .where((e) => e.compatibleItems.contains(tool.toolName))
       .toList();
@@ -23,6 +29,10 @@ class ToolComponent {
   DynamicEnchantable tool;
 
   ToolComponent() {}
+
+  void close() {
+      _onClose.add(null);
+  }
 
   List<String> getTypeNames() {
     return allItems;
