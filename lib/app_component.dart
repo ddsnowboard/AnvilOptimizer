@@ -2,6 +2,7 @@ import 'package:angular/angular.dart';
 import "tool_component.dart";
 import 'calc.dart';
 import 'DynamicEnchantable.dart';
+import 'DynamicEnchantment.dart';
 import 'enchant_subtree.dart';
 
 @Component(
@@ -10,7 +11,16 @@ import 'enchant_subtree.dart';
     directives: [coreDirectives, ToolComponent, EnchantSubtree],
     styleUrls: ['app_component.css'])
 class AppComponent {
-  List<DynamicEnchantable> tools = [];
+  List<DynamicEnchantable> tools = [
+    DynamicEnchantable(
+        "Pickaxe",
+        [
+          DynamicEnchantment("Efficiency", 5),
+          DynamicEnchantment("Unbreaking", 3)
+        ],
+        0,
+        false)
+  ];
   EnchantOrdering output = null;
   /*
      EnchantOrdering output = EnchantOrdering(EnchantPairing(
@@ -34,6 +44,6 @@ class AppComponent {
   }
 
   void removeTool(int index) {
-      tools.removeAt(index);
+    tools.removeAt(index);
   }
 }

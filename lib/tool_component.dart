@@ -31,7 +31,7 @@ class ToolComponent {
   ToolComponent() {}
 
   void close() {
-      _onClose.add(null);
+    _onClose.add(null);
   }
 
   List<String> getTypeNames() {
@@ -43,19 +43,6 @@ class ToolComponent {
         .firstWhere((e) => e.compatibleItems.contains(tool.toolName))
         .fullName;
     tool.enchantments.add(DynamicEnchantment(startingEnchantment, 1));
-  }
-
-  Set<String> compatibilityListByName(String name) {
-    var e = allEnchantmentsConstructed.firstWhere((e) => e.fullName == name);
-    return e.compatibleItems;
-  }
-
-  void emit() {
-    print(tool.toolName);
-    for (var e in tool.enchantments) {
-      print("${e.enchant} ${e.level}");
-    }
-    print("Damaged?: ${tool.isDamaged}");
   }
 
   void removeEnchant(int idx) {

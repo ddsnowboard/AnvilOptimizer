@@ -1,9 +1,9 @@
-<div>
+<div class="container">
     <select [(ngModel)]="enchant.enchant">
         <option *ngFor="let e of possibilities" [value]="e.fullName">{{e.fullName}}</option>
     </select>
     <input type="number" min="1" [max]="currentMaxLevel()" [(ngModel)]="enchant.level"/>
     <div class="deleteButton" (click)="close()">
-        <img src="https://3vfjs6e58tj3yfef2wptam15-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/red-x-on-network-icon-600x526.png" height="25" width="25"/>
+        <img src="https://3vfjs6e58tj3yfef2wptam15-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/red-x-on-network-icon-600x526.png" height="18" width="18"/>
     </div>
 </div>

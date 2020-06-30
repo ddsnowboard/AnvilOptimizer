@@ -1,3 +1,7 @@
 .simpleBorder {
     border: 1px solid black;
 }
+
+.toolContainer {
+    display: inline-block;
+}

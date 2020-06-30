@@ -1,18 +1,29 @@
 <div>
-    <label for="type">Item:</label>
-    <select name="type" [(ngModel)]="tool.toolName">
-        <option *ngFor="let name of getTypeNames()" value="{{name}}">
+    <div class="container">
+        <label for="type">Item:</label>
+        <select name="type" [(ngModel)]="tool.toolName">
+            <option *ngFor="let name of getTypeNames()" value="{{name}}">
             {{ name }}
-        </option>
-    </select>
-    <label for="priorWork">Prior work (<a target="_blank" href="https://minecraft.gamepedia.com/Anvil/Mechanics#Prior_work_penalty">?</a>)</label>
-    <input type="number" name="priorWork" min="0" [(ngModel)]="tool.priorWork" />
-    <input type="button" (click)="addEnchantment" value="+"/>
-    <enchant-component *ngFor="let enchant of tool.enchantments; let idx=index" (onClose)="removeEnchant(idx)" [enchant]="enchant" [possibilities]="possibleEnchantments"></enchant-component>
-    <select [(ngModel)]="tool.damageState">
-        <option value="Undamaged">Undamaged</option>
-        <option value="Damaged">Damaged</option>
-    </select>
-    <input type="button" (click)="emit()" value="GO"/>
-    <span class="deleteButton" (click)="close()">Delete Tool</span>
+            </option>
+        </select>
+        <div>
+            <label for="priorWork">Prior work (<a target="_blank" href="https://minecraft.gamepedia.com/Anvil/Mechanics#Prior_work_penalty">?</a>):</label>
+            <input type="number" name="priorWork" min="0" [(ngModel)]="tool.priorWork" />
+        </div>
+        <div class="enchantments">
+            Enchantments:
+            <enchant-component *ngFor="let enchant of tool.enchantments; let idx=index" (onClose)="removeEnchant(idx)" [enchant]="enchant" [possibilities]="possibleEnchantments"></enchant-component>
+            <div>
+                <input type="button" (click)="addEnchantment" value="Add Enchantment"/>
+            </div>
+        </div>
+        <div>
+            <label for="damaged">Damaged?</label>
+            <select name="damaged" id="damaged" [(ngModel)]="tool.damageState">
+                <option value="Undamaged">No</option>
+                <option value="Damaged">Yes</option>
+            </select>
+        </div>
+        <div class="deleteButton" (click)="close()">Delete Tool</div>
+    </div>
 </div>

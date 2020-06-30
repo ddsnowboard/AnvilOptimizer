@@ -3,7 +3,12 @@ import 'enchantments.dart';
 import 'dart:math';
 
 class DynamicEnchantment {
-  int level;
+  int _level;
+  int get level => _level;
+  set level(int newLevel) {
+    if (newLevel != null) _level = newLevel;
+  }
+
   String _enchant;
   String get enchant => _enchant;
   set enchant(String newEnchant) {
@@ -12,7 +17,7 @@ class DynamicEnchantment {
     _enchant = newEnchant;
   }
 
-  DynamicEnchantment(this._enchant, this.level) {}
+  DynamicEnchantment(this._enchant, this._level) {}
   Enchantment toEnchantment() {
     return constructEnchantment(enchant, level);
   }

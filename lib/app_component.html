@@ -1,4 +1,7 @@
-<tool-component *ngFor="let tool of tools; let idx=index" (onClose)="removeTool(idx)" [tool]="tool"></tool-component>
+<div class="toolContainer">
+    <tool-component *ngFor="let tool of tools; let idx=index" (onClose)="removeTool(idx)" [tool]="tool"></tool-component>
+</div>
+<br />
 <input type="button" value="Add tool" (click)="addTool()" />
 
 <input type="button" value="Calculate" (click)="calculateMinimum()" />

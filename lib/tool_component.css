@@ -3,3 +3,18 @@
     color: blue;
     cursor: pointer;
 }
+
+.container {
+    border: 1px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.enchantments {
+    margin: 5px 0;
+    border: 1px solid #ffd0f3;
+    padding: 4px;
+}

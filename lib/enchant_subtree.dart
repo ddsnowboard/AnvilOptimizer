@@ -28,6 +28,8 @@ class EnchantSubtree {
   }
 
   int toplineCost() {
-      return combine(output.target.makeConcrete(), output.sacrifice.makeConcrete()).cost;
+    return combine(
+            output.target.makeConcrete(), output.sacrifice.makeConcrete())
+        .cost;
   }
 }
