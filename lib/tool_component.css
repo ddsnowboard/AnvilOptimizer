@@ -1,4 +1,5 @@
 .deleteButton {
+    display: inline-block;
     text-decoration: underline;
     color: blue;
     cursor: pointer;
