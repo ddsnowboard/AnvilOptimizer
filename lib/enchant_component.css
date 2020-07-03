@@ -1,5 +1,4 @@
 .deleteButton {
-    background-image: url();
     display: inline-block;
 }
 
@@ -10,4 +9,8 @@
 
 .container {
     margin: 5px 0;
+}
+
+.levelInput {
+    width: 4em;
 }

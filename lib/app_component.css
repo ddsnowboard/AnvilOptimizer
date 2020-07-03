@@ -1,7 +1,13 @@
 .simpleBorder {
     border: 1px solid black;
+    min-width: max-content;
 }
 
 .toolContainer {
     display: inline-block;
+}
+
+.flexer {
+    display: flex;
+    flex-wrap: wrap;
 }
