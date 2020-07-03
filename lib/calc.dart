@@ -34,15 +34,21 @@ EnchantOrdering cheapestOrdering(Set<ConcreteEnchantable> items) {
     return null;
   }
   var orderings = allOrderings(items).where((o) => o.isPossible());
-  var cheapest = orderings.reduce((o1, o2) {
-    var c1 = o1.getCost();
-    var c2 = o2.getCost();
-    if (c1 < c2)
-      return o1;
-    else
-      return o2;
-  });
-  return cheapest;
+  try {
+    var cheapest = orderings.reduce((o1, o2) {
+      var c1 = o1.getCost();
+      var c2 = o2.getCost();
+      if (c1 < c2)
+        return o1;
+      else
+        return o2;
+    });
+    return cheapest;
+  } catch (e) {
+    print(e);
+    print("I sure hope that's a bad state error...");
+    return null;
+  }
 }
 
 class LevelTooHighException implements Exception {
