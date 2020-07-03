@@ -189,7 +189,7 @@ ConcreteEnchantable _computeOutput(
     if (out.hasCompatibleEnchantment(enchant)) {
       var compat = out.getCompatibleEnchantment(enchant);
       if (compat.level == enchant.level) {
-        compat.level++;
+        compat.level = min(compat.level + 1, enchant.maxLevel);
       } else {
         compat.level = max(enchant.level, compat.level);
       }
