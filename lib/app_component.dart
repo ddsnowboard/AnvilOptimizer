@@ -19,6 +19,20 @@ class AppComponent {
           DynamicEnchantment("Unbreaking", 3)
         ],
         0,
+        false),
+    DynamicEnchantable(
+        "Pickaxe",
+        [
+          DynamicEnchantment("Fortune", 3)
+        ],
+        0,
+        false),
+    DynamicEnchantable(
+        "Book",
+        [
+          DynamicEnchantment("Mending", 1)
+        ],
+        0,
         false)
   ];
   EnchantOrdering output = null;
